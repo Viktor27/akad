@@ -1,0 +1,210 @@
+@import "bootstrap-variables";
+.ba-post{
+	font-size: 14px;
+	margin-bottom: 100px;
+	&__img{
+		display: block;
+		margin-bottom: 30px;
+		&:hover{
+			opacity: .8;
+		}
+		img{
+			display: block;
+		}
+	}
+	&__date{
+		display: inline-block;
+		background: $brand-primary;
+		color: #FFF;
+		text-transform: uppercase;
+		font-weight: 800;
+		font-family: $headings-font-family;
+		padding: 10px 23px;
+		line-height: 1;
+	}
+	&__comments{
+		display: inline-block;
+		margin-left: 15px;
+		color: #ccc;
+		i{
+			font-size: 18px;
+			margin-right: 8px;
+			vertical-align: middle;
+		}
+	}
+	&__likes{
+		color: #ccc;
+		display: inline-block;
+		margin-left: 18px;
+		i{
+			font-size: 18px;
+			margin-right: 8px;
+			color:  #ea6a6a;
+			vertical-align: middle;
+		}
+	}
+	&__readmore{
+		&:after{
+			content: "\f30f";
+			display: inline-block;
+			font-family: "Ionicons";
+			speak: none;
+			font-style: normal;
+			font-weight: normal;
+			font-variant: normal;
+			text-transform: none;
+			text-rendering: auto;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+	}
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+select,
+input[type="search"]{
+	@extend .form-control
+}
+
+// <!-- ¯\_(ツ)_/¯ --> SIDEBAR
+
+.ba-search-form {
+	font-family: $headings-font-family;
+	input {
+		font-weight: 700;
+		text-transform: uppercase;
+		position: relative;
+		background-color: #ececec;
+		&:focus {
+			border-color: $brand-primary;
+		}
+	}
+	button {
+		position: absolute;
+		right: 20px;
+		top: 4px;
+		color:  #60606e;
+		font-size: 18px;
+		font-weight: 400;
+		background: none;
+		outline: none;
+		border: none;
+		&:hover {
+			color: $brand-primary;
+		}
+	}
+}
+.ba-widget-title {
+	font-family: $headings-font-family;
+	color:  #60606e;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+.nav-tabs a {
+
+	font-family: $headings-font-family;
+	color:  #60606e;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+
+}
+
+.tab-content {
+	//padding-top: 30px;
+	.ba-wrap {
+		display: block;
+		text-decoration: none;
+		margin-top: 30px;
+		&:hover {
+			opacity: .8;
+			transition: .3s;
+		}
+	}
+	img {
+		max-height: 80px;
+		max-width: 80px;
+		display: inline-block;
+		margin-right: 15px;
+		float: left;
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		text-transform: uppercase;
+		h4 {
+			margin: 0;
+			font-family: $headings-font-family;
+			color:  #60606e;
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 1.3;
+		}
+		time {
+			font-family: $font-family-sans-serif;
+			color:  #9a9a9a;
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 1.5;
+		}
+	}
+}
+.categories-list {
+	list-style: none;
+	padding: 0;
+	&__item {
+		float: left;
+		width: 100%;
+		a {
+			color: #60606e;
+			display: inline-block;
+			padding: 20px;
+			border-bottom: solid 1px #bfbfbf;
+			width: 100%;
+			text-decoration: none;
+			cursor: pointer;
+			vertical-align: middle;
+			&:hover {
+				border-bottom: solid 1px $brand-primary;
+			}
+		}
+		span {
+			float: right;
+		}
+	}
+}
+.ba-tags {
+	list-style: none;
+	padding: 0;
+
+
+	&__list {
+		margin-right: 5px;
+		margin-bottom: 5px;
+		float: left;
+	}
+	a {
+		display: inline-block;
+		height: 30px;
+		line-height: 30px;
+		color: #999999;
+		background-color: #e5e5e5;
+		padding: 0 15px;
+		font-family: $headings-font-family;
+		font-size: 12px;
+		font-weight: 700;
+		text-transform: uppercase;
+		text-decoration: none;
+		&:hover {
+			opacity: .8;
+			color: #000;
+		}
+	}
+}

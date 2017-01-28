@@ -1,0 +1,153 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		title About - AKAD.
+		link(rel='icon', href='favicon.ico')
+		link(href='assets/css/style.css', rel='stylesheet')
+	body
+		.ba-intro(style="background-image:url(assets/images/about-bg.jpg)")
+			include _main-menu.jade
+			.container
+				.ba-intro__body
+					h1.ba-page-title Blog
+					ol.breadcrumb
+						li
+							a(href="index.html") Home
+						li.active Blog
+		main
+			section.ba-section
+				.container
+					.row
+						.col-sm-8
+							- for (var i = 0; i < 3; ++i) {
+								include _post.jade
+							- }
+							//- /.ba-post
+						.col-sm-3.col-sm-offset-1
+							.ba-sidebar
+								.ba-widget
+									form.ba-search-form(action="#", method="post")
+										input(type="search", name="search", placeholder="Search...")
+										button.ion-search(type="submit")
+									.ba-tabs
+									// Nav tabs
+									.ba-widget-title posts
+									ul.nav.nav-tabs(role='tablist')
+										li.active(role='presentation')
+											a(href='#latest', aria-controls='latest', role='tab', data-toggle='tab') latest
+										li(role='presentation')
+											a(href='#popular', aria-controls='popular', role='tab', data-toggle='tab') popular
+										li(role='presentation')
+											a(href='#comments', aria-controls='comments', role='tab', data-toggle='tab') comments
+									// Tab panes
+									.tab-content
+										#latest.tab-pane.active(role='tabpanel')
+											a(href="#").ba-wrap
+												img(src="assets/images/posts/posts1.jpg", alt="latest")
+												.tab-content__item
+													h4
+														| Magna mollis ultricies
+
+													time 3th oct 2012
+											a(href="#").ba-wrap
+												img(src="assets/images/posts/posts2.jpg", alt="latest")
+												.tab-content__item
+													h4 Magna mollis ultricies
+													time 3th oct 2012
+											a(href="#").ba-wrap
+												img(src="assets/images/posts/posts3.jpg", alt="latest")
+												.tab-content__item
+													h4 Magna mollis ultricies
+													time 3th oct 2012
+										#popular.tab-pane(role='tabpanel')
+											a(href="#").ba-wrap
+												img(src="assets/images/posts/posts3.jpg", alt="latest")
+												.tab-content__item
+													h4 Magna mollis ultricies
+													time 3th oct 2012
+											a(href="#").ba-wrap
+												img(src="assets/images/posts/posts1.jpg", alt="latest")
+												.tab-content__item
+													h4 Magna mollis ultricies
+													time 3th oct 2012
+											a(href="#").ba-wrap
+												img(src="assets/images/posts/posts2.jpg", alt="latest")
+												.tab-content__item
+													h4 Magna mollis ultricies
+													time 3th oct 2012
+										#comments.tab-pane(role='tabpanel')
+											a(href="#").ba-wrap
+												img(src="assets/images/posts/posts2.jpg", alt="latest")
+												.tab-content__item
+													h4 Magna mollis ultricies
+													time 3th oct 2012
+											a(href="#").ba-wrap
+												img(src="assets/images/posts/posts3.jpg", alt="latest")
+												.tab-content__item
+													h4 Magna mollis ultricies
+													time 3th oct 2012
+											a(href="#").ba-wrap
+												img(src="assets/images/posts/posts1.jpg", alt="latest")
+												.tab-content__item
+													h4 Magna mollis ultricies
+													time 3th oct 2012
+									.ba-widget-title Categories
+									ul.categories-list.clearfix
+										li.categories-list__item
+											a(href="#") Buiseness
+												span 15
+										li.categories-list__item
+											a(href="#") Photography
+												span 17
+										li.categories-list__item
+											a(href="#") Journal
+												span 22
+										li.categories-list__item
+											a(href="#") Web devlopment
+												span 30
+
+									.ba-widget-title Tags
+
+									ul.ba-tags.clearfix
+										li.ba-tags__list
+											a(href="#") Css
+										li.ba-tags__list
+											a(href="#") javascript
+										li.ba-tags__list
+											a(href="#") jquery
+										li.ba-tags__list
+											a(href="#") html5
+										li.ba-tags__list
+											a(href="#") bootstrap
+										li.ba-tags__list
+											a(href="#") css
+										li.ba-tags__list
+											a(href="#") javascript
+										li.ba-tags__list
+											a(href="#") jquery
+
+									.ba-widget-title Archives
+									ul.categories-list
+										li.categories-list__item
+											a(href="#") Buiseness
+												span 15
+										li.categories-list__item
+											a(href="#") Photography
+												span 17
+										li.categories-list__item
+											a(href="#") Journal
+												span 22
+										li.categories-list__item
+											a(href="#") Web devlopment
+												span 30
+
+
+			include _subscribe.jade
+			include _footer.jade
+
+		include _scripts.jade
+
+

@@ -1,0 +1,78 @@
+@import "bootstrap-variables";
+
+.ba-section--subscribe {
+	padding: 50px 0;
+	background-color: $brand-primary;
+	h4 {
+		font-family: $headings-font-family;
+		color:  #ffffff;
+		font-size: 30px;
+		font-weight: 700;
+		line-height: 1.6;
+		text-align: left;
+	}
+	.btn {
+		padding-left: 18px;
+		padding-right: 18px;
+		background-color:  #ffffff;
+		font-family: $headings-font-family;
+		color:  $brand-primary;
+		font-size: 14px;
+		font-weight: 700;
+		text-align: center;
+		&:hover,&:focus {
+			box-shadow: 0 0 2px 2px #fff;
+			color: #000;
+		}
+	}
+
+	.ba-form {
+		background-color: #FFF;
+		padding: 20px 22px;
+		.row {
+			margin: 0;
+		}
+
+		&__title {
+			color:  #60606e;
+			font-size: 24px;
+			font-weight: 700;
+			line-height: 1.5;
+			text-align: left;
+		}
+		&__text {
+			color: #999999;
+		}
+		&__input {
+
+			font-family: $headings-font-family;
+			color:  #cdcdcd;
+			font-size: 12px;
+			font-weight: 700;
+			display: inline-block;
+			min-height: 37px;
+			line-height: 37px;
+			text-transform: uppercase;
+			padding-right: 200px;
+			padding-left: 10px;
+			vertical-align: middle;
+			&:focus::placeholder {
+				color: $brand-primary;
+
+			}
+		}
+
+		.btn {
+			font-size: 14px;
+			padding-left: 45px;
+			padding-right: 45px;
+			background-color: $brand-primary;
+			color: #ffffff;
+			border:none;
+			&:hover,&:focus {
+				box-shadow: 0 0 2px 2px $brand-primary;
+				color: #000;
+			}
+		}
+	}
+}
